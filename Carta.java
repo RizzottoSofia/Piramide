@@ -10,7 +10,7 @@ public class Carta
     // variabili d'istanza 
     private int numero;
     private char seme;
-    // prova prova
+    
     /**
      * Costruttore dell'oggetto Carta
      * 

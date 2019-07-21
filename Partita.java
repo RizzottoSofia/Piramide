@@ -209,7 +209,6 @@ public class Partita
      * 
      * Stampa la prima carta del mazzo e del pozzo
      * 
-     * @param posizioni matrice 2x2
      * @return res matrice di stringhe senza le carte giocate
      */
     public void stampaMazzoPozzo(){
@@ -320,7 +319,7 @@ public class Partita
         }
         if (m.getCima().getNumero()==0){ // cima è 0 se ho finito le carte giocabili nel mazzo
             boolean trovato = false;
-            int[][] posizioni2 = this.combPiramide(); //prima di girare il mazzo cerco se ci sono
+            int[][] posizioni2 = this.combPiramide(); //prima di girare il mazzo cerco se ci sono altre combinazioni
             if (posizioni2[0][0]==-1){ // se non ho trovato la combinazione nella piramide cerco nel pozzo
                 posizioni2 = this.combMazzoPozzo(poz.getTop()); 
                 if (posizioni2[0][0] != -1){ // se l'ho trovata nel pozzo
